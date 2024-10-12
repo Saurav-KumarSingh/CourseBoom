@@ -6,17 +6,17 @@ import introVideo from '../../assets/videos/intro.mp4'
 const Home = () => {
     return (
         <div>
-            <section className="text-gray-600 body-font ">
+            <section className=" body-font ">
                 <div className="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-end md:text-right mb-16 md:mb-0 items-center text-center">
-                        <h1 className="text-2xl font-bold leading-9  mb-3 text-gray-900 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                        <h1 className="text-2xl font-bold leading-9  mb-3  sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
                             LEARN FROM THE EXPERTS
                         </h1>
                         <p className="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed">
                             Find Valuable Content At Reasonable Price
                         </p>
                         <div className="flex justify-end">
-                            <Link to='/' className="px-8 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded transition-transform transform-gpu hover:shadow-lg">
+                            <Link to='/' className="text-white px-8 py-2 bg-gradient-to-r from-blue-500 to-purple-500  font-bold rounded transition-transform transform-gpu hover:shadow-lg">
                                 Explore Now
                             </Link>
                         </div>
