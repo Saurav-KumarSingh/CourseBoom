@@ -35,9 +35,9 @@ const About = () => {
                 </div>
             </section>
             <section>
-                <div className='md:flex md:justify-between px-1  md:px-25 items-center py-10 font-semibold'>
-                    <div className='my-4'>We are a video streaming platform with some courses available only for premium users</div>
-                    <Link to='#' className='text-purple-700 border px-2 py-1 rounded border-purple-700'>Checkout Our Plan</Link>
+                <div className=' md:flex md:justify-between px-1  md:px-25 items-center py-10 font-semibold'>
+                    <div className='my-4 '>We are a video streaming platform with some courses available only for premium users</div>
+                    <Link to='/subscribe' className='text-purple-700 border px-2 py-1 rounded border-purple-700'>Checkout Our Plan</Link>
                 </div>
             </section>
             <section className="flex items-center justify-center md:min-h-screen my-4 md:my-0">

@@ -4,7 +4,7 @@ import Logo from '../Logo'
 const Footer = () => {
     return (
         <div>
-            <div className="text-center py-12 bg-gray-100 dark:bg-slate-900">
+            <div className="text-center py-12  shadow-md ">
                 <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
                    <Logo className='h-12'/>
                 </a>

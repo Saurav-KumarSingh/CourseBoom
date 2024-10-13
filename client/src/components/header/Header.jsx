@@ -17,7 +17,7 @@ const Header = () => {
     };
 
     const isAdmin = false;
-    const isAuthenticated=false;
+    const isAuthenticated=true;
 
     const navLinks = [
         { to: "/home", label: "Home" },
