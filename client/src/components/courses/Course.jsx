@@ -7,7 +7,7 @@ const ResponsiveCards = () => {
     const courses = [
         {
             id: 1,
-            title: "Basic Level",
+            title: "HTML",
             description: "Learn the basics of web development with this beginner course.",
             image: "https://cdn.pixabay.com/photo/2021/07/24/01/42/zebra-dove-6488440_960_720.jpg",
             creator: "John Doe",
@@ -16,7 +16,7 @@ const ResponsiveCards = () => {
         },
         {
             id: 2,
-            title: "Intermediate Level",
+            title: "Frontend",
             description: "Step up your skills with this intermediate web development course.",
             image: "https://cdn.pixabay.com/photo/2021/08/03/11/01/stairs-6519085_960_720.jpg",
             creator: "Jane Smith",
@@ -25,7 +25,7 @@ const ResponsiveCards = () => {
         },
         {
             id: 3,
-            title: "Advanced Level",
+            title: "Web Development",
             description: "Master advanced techniques in web development with this course.",
             image: "https://cdn.pixabay.com/photo/2021/09/12/17/43/parrot-feathers-6619082_960_720.jpg",
             creator: "Alice Brown",
@@ -34,7 +34,7 @@ const ResponsiveCards = () => {
         },
         {
             id: 4,
-            title: "Intermediate Level",
+            title: "Backend Development",
             description: "Step up your skills with this intermediate web development course.",
             image: "https://cdn.pixabay.com/photo/2021/08/03/11/01/stairs-6519085_960_720.jpg",
             creator: "Jane Smith",
@@ -43,7 +43,7 @@ const ResponsiveCards = () => {
         },
         {
             id: 5,
-            title: "Advanced Level",
+            title: "React Js",
             description: "Master advanced techniques in web development with this course.",
             image: "https://cdn.pixabay.com/photo/2021/09/12/17/43/parrot-feathers-6619082_960_720.jpg",
             creator: "Alice Brown",
