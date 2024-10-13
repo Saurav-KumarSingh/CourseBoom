@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 
-const ResponsiveCards = () => {
+const Course = () => {
     const [searchQuery, setSearchQuery] = useState(""); // State for the search query
 
     const courses = [
@@ -146,4 +146,4 @@ const ResponsiveCards = () => {
     );
 };
 
-export default ResponsiveCards;
+export default Course;

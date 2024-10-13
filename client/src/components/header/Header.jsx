@@ -3,7 +3,7 @@ import { MdLightMode, MdNightlight } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../Logo'; // Assuming Logo is in the parent folder
 
-const Navbar = () => {
+const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -16,10 +16,11 @@ const Navbar = () => {
         document.body.classList.toggle('dark', !isDarkTheme);
     };
 
-    const isAdmin = true;
+    const isAdmin = false;
+    const isAuthenticated=false;
 
     const navLinks = [
-        { to: "/", label: "Home" },
+        { to: "/home", label: "Home" },
         { to: "/courses", label: "Browse All Courses" },
         { to: "/about-us", label: "About Us" },
         { to: "/profile", label: "Profile" },
@@ -70,7 +71,7 @@ const Navbar = () => {
                             </button>
                         </div>
 
-                        {navLinks.map(({ to, label }, index) => (
+                        {isAuthenticated ? navLinks.map(({ to, label }, index) => (
                             <NavLink
                                 key={index}
                                 to={to}
@@ -78,7 +79,21 @@ const Navbar = () => {
                             >
                                 {label}
                             </NavLink>
-                        ))}
+                        )):<div className='flex'>
+                            <NavLink
+                                
+                                to='/register'
+                                className={({ isActive }) => `link-no-border md:mx-4 block py-2 pr-4 pl-3 font-semibold duration-200 ${isActive ? "text-blue-600" : "text-purple-400"}`}
+                            >
+                                Sinup
+                            </NavLink>
+                            <NavLink
+                                
+                                to='/'
+                                className={({ isActive }) => `link-no-border md:mx-4 block py-2 pr-4 pl-3 font-semibold duration-200 ${isActive ? "text-blue-600" : "text-purple-400"}`}
+                            >
+                                Login
+                            </NavLink></div>}
 
                         {isAdmin && (
                             <NavLink
@@ -96,7 +111,7 @@ const Navbar = () => {
             {isOpen && (
                 <div className="lg:hidden" id="mobile-menu">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        {navLinks.map(({ to, label }, index) => (
+                        {isAuthenticated ? navLinks.map(({ to, label }, index) => (
                             <NavLink
                                 key={index}
                                 to={to}
@@ -104,7 +119,21 @@ const Navbar = () => {
                             >
                                 {label}
                             </NavLink>
-                        ))}
+                        )):<div >
+                        <NavLink
+                            
+                            to='/register'
+                            className={({ isActive }) => `link-no-border md:mx-4 block py-2 pr-4 pl-3 font-semibold duration-200 ${isActive ? "text-blue-600" : "text-purple-400"}`}
+                        >
+                            Sinup
+                        </NavLink>
+                        <NavLink
+                            
+                            to='/'
+                            className={({ isActive }) => `link-no-border md:mx-4 block py-2 pr-4 pl-3 font-semibold duration-200 ${isActive ? "text-blue-600" : "text-purple-400"}`}
+                        >
+                            Login
+                        </NavLink></div>}
 
                         {isAdmin && (
                             <NavLink
@@ -131,4 +160,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Header;
