@@ -10,6 +10,7 @@ import ForgotPassword from './components/auth/ForgotPassword'
 import ResetPassword from './components/auth/ResetPassword'
 import Contact from './components/contact/Contact'
 import RquestCourse from './components/request.jsx/Request'
+import About from './components/about/About'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path='/home' element={<Home/>}/>
           <Route path='/courses' element={<Course/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/about-us' element={<About/>}/>
           <Route path='/request' element={<RquestCourse/>}/>
         </Routes>
         <Footer/>
